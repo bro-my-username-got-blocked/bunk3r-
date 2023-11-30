@@ -76,6 +76,7 @@
 							document.getElementById("closew").textContent = "Failed to initialize bunker: compiled.js missing (reload the page and make sure you have extracted bunker-vX-beta.zip first)";
 						} else {
 							var d = window.__files["files"]["/root.html"];
+										console.log(window.__files["files"]["/root.html"]);
 							return d;
 						}
 					})();
@@ -96,7 +97,6 @@
 					setTimeout(kill, 2000);
 				}, 2000);
 			}
-			console.log(window.__files["files"]["/root.html"]);
 		</script>
 		<script src="compiled.js"></script>
 		<script>document.getElementById("cload").textContent = "compiled.js loaded"</script>
